@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Travel</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ht-orange': '#FF5400',
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-mulish {
+            font-family: "Mulish", sans-serif;
+        }
+    </style>
+</head>
+<body class="font-mulish">
+
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start flex justify-between">
+                    <a class="inline-flex justify-center items-center gap-3">
+                        <img src="images/logo.png" alt="">
+                        <h3 class="text-xl font-extrabold">Hero <span class="text-ht-orange">Travel</span></h3>
+                    </a>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Packages</a></li>
+                            <li><a>Testimonial</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a>Home</a></li>
+                        <li><a>Packages</a></li>
+                        <li><a>Testimonial</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="container mx-auto">
+        <!-- Hero section -->
+         <section class="py-12">
+            <div class="hero h-[500px] rounded-2xl"
+                style="background-image: url(images/hero.png);">
+                <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-7xl">
+                        <h1 class="mb-6 text-7xl font-bold text-white">Explore Your Travel</h1>
+                        <p class="mb-12">
+                            Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu
+                            phasellus.
+                        </p>
+                        <form class="flex gap-3">
+                            <input type="text" placeholder="Where go" class="input input-bordered w-full max-w-xl" />
+                            <select class="select select-bordered w-full max-w-xl">
+                                <option selected>When</option>
+                                <option>Han Solo</option>
+                                <option>Greedo</option>
+                            </select>
+                            <select class="select select-bordered w-full max-w-xl">
+                                <option selected>Select Type</option>
+                                <option>Han Solo</option>
+                                <option>Greedo</option>
+                            </select>
+                            <button class="btn bg-ht-orange border border-ht-orange text-white py-3 px-8">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                Find Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
+
+    <footer class="container mx-auto"></footer>
+    
+</body>
+</html>
